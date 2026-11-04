@@ -6,11 +6,11 @@ self.addEventListener("push", (event) => {
   event.waitUntil(self.registration.showNotification(data.title || "Desk", {
     body: data.body || "",
     data: data,
-    icon: "icons/icon-192.png",
+    icon: "/icons/icon-192.png",
   }));
 });
 self.addEventListener("notificationclick", (event) => {
   event.notification.close();
-  const url = (event.notification.data && event.notification.data.url) || "./";
+  const url = (event.notification.data && event.notification.data.url) || "/";
   event.waitUntil(clients.openWindow(url));
 });
