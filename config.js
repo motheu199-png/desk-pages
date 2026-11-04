@@ -1,0 +1,1 @@
+window.DESK_CONFIG={vapidPublicKey:'BEkV6f2po91B1fy1zF02fEZFqVqnOK0MRKvxzvPm7sIkLwjuF9Wok9q_EgG3mJWWn9X5Um5fEla51SPuswnJYME',plan:"B"};
